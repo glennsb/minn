@@ -8,7 +8,9 @@ A quick hack awk script to aid user needing to select min line every N lines in 
 $ ./minn.awk -v group=N -v key=K INPUT
 ```
 
-The above will output the min line in every group of N lines based on the value from column K
+The above will output the min line in every group of N lines based on the value from column K (column counting starts at 1 as per awk syntax)
+
+By default it will group by 10 lines on the third column
 
 ## Requirements
 
